@@ -1,0 +1,5 @@
+# Downloaded reference materials
+download/
+
+# Python virtualenv for PyOpenCL
+clvenv/

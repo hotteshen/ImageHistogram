@@ -9,6 +9,7 @@
 
 * [ImageHistogram](https://github.com/shreyasbhatia09/ImageHistogram), C++/OpenCL implementation of linear equalization algorithm
 * [Get Started with Intel® SDK for OpenCL](https://software.intel.com/en-us/articles/sdk-for-opencl-2019-gsg-linux-os)
+* [Histogram Equalization by Patricio Bulic](https://ucilnica.fri.uni-lj.si/pluginfile.php/133289/mod_resource/content/0/HistogramEquilization2019.pdf)
 
 
 ## Dev Env Preparation on Linux Mint 19

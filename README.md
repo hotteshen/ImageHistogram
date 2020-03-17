@@ -2,6 +2,8 @@
 
 * Cumulative Histogram Equalization using OpenCL
 * forked from [ImageHistogram](https://github.com/shreyasbhatia09/ImageHistogram)
+* MIT License (except the original work by [Shreyas](https://github.com/shreyasbhatia09))
+
 
 ## References
 

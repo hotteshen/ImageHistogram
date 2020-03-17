@@ -38,3 +38,7 @@ Download "Intel System Studio" and install
 ## Compilation
 
     g++ main.cpp -lOpenCL -std=c++11 -o ocl_vector_addition.o
+
+    g++ -L/opt/intel/system_studio_2019/opencl/SDK/lib64 -I/opt/intel/system_studio_2019/opencl/SDK/include main.cpp -Wno-deprecated-declarations -lOpenCL -o GPUOpenCLProjectforLinux
+
+    g++ -L/opt/intel/system_studio_2019/opencl/SDK/lib64 -I/opt/intel/system_studio_2019/opencl/SDK/include main.cpp -Wno-deprecated-declarations -lOpenCL -o CPUOpenCLProjectforLinux

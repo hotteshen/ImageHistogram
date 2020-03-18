@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {	
-	freopen("in.txt", "r", stdin); //open a file for reading purpsoe
+	freopen("testdata/in.txt", "r", stdin); //open a file for reading purpsoe
 	cl_context context;			//context
 	cl_command_queue queue;      //command queue
 	cl_device_id device;         //device id
@@ -25,8 +25,10 @@ int main() {
 		std::cout << "PLatform Id :" << platforms[i] <<"\n";
 	}
 
+    std::cout << "\nUsing platform " << platforms[0] << "\n";
+
 	// Device
-	if (clGetDeviceIDs(platforms[1], CL_DEVICE_TYPE_GPU, 1, &device, NULL)!= CL_SUCCESS) {
+	if (clGetDeviceIDs(platforms[1], CL_DEVICE_TYPE_ALL, 1, &device, NULL)!= CL_SUCCESS) {
 		//device
 		//1st- plateform id return by clGetPlateformsIDs
 		//2nd-identifies the type of OpenCL device
@@ -168,7 +170,7 @@ int main() {
 
 
 	//printing the formatted output for input to MATLAB
-	freopen("out.txt", "w", stdout);
+	freopen("testdata/out.txt", "w", stdout);
 	int index = 0;
 	std::cout << "[";
 	for(int i =0; i< HEIGHT; i++){
